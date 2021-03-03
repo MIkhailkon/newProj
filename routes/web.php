@@ -18,5 +18,7 @@ Route::get('/categories','MainController@categories')->name('categories');
 Route::get('/categories/{category}','MainController@category')->name('category');
 Route::get('/about','MainController@about')->name('about');
 Route::get('/basket','MainController@basket')->name('basket');
+Route::get('/admin-add-product','MainController@admin_add_product')->name('admin-add-product');
+Route::post('/admin-add-product/submit','ProductController@admin_add_product')->name('admin-add-product-submit');
 Route::get('/{product}','MainController@product')->name('product');
 

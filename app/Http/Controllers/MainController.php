@@ -35,4 +35,7 @@ class MainController extends Controller
 //        dd($product);
         return view('product_card',compact('product'));
     }
+    public function admin_add_product(){
+        return view('admin_add_product');
+    }
 }
