@@ -9,7 +9,8 @@ use Illuminate\Http\Request;
 class MainController extends Controller
 {
     public function home(){
-        return view('home');
+        $products = Product::get();
+        return view('home',compact('products'));
     }
     public function categories(){
         $categories = Category::get();
@@ -23,16 +24,12 @@ class MainController extends Controller
         return view('contact');
     }
     public function category($code){
-        $products = Product::get();
         $category = Category::where('code',$code)->first();
-        return view('category',compact('category','products'));
+        return view('category',compact('category'));
     }
-    public function basket(){
-        return view('basket');
-    }
-    public function product($code){
-        $product = Product::where('code',$code)->first();
-//        dd($product);
+
+    public function product($category_code,$product_code){
+        $product = Product::where('code',$product_code)->first();
         return view('product_card',compact('product'));
     }
     public function admin_add_product(){

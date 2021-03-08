@@ -1,4 +1,8 @@
-.form-group:nth-child(6) {
+.btn {
   margin-top: 10px;
+}
+
+.card-img-top {
+  height: 60%;
 }
 

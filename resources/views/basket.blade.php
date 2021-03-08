@@ -46,7 +46,7 @@
                 </table>
                 <br>
                 <div class="btn-group pull-right" role="group">
-                    <a type="button" class="btn btn-success" href="http://internet-shop.tmweb.ru/basket/place">Оформить заказ</a>
+                    <a type="button" class="btn btn-success" href="{{route('basket_place')}}">Оформить заказ</a>
                 </div>
             </div>
         </div>

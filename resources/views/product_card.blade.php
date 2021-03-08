@@ -6,9 +6,9 @@
     <div class="container">
         <div class="starter-template">
             <h1>{{$product->name}}</h1>
-            <h2>{{$product->category_id}}</h2>
+            <h2>{{$product->category->name}}</h2>
             <p>Цена: <b>{{$product->prise}}</b></p>
-            <img src="{{$product->image}}" width="250px">
+            <img src="/storage/{{$product->image}}" width="250px">
             <p>{{$product->description}}</p>
 
             <form action="http://internet-shop.tmweb.ru/basket/add/2" method="POST">

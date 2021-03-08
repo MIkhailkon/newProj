@@ -2,8 +2,8 @@
 @section('title')Добавление продукта@endsection
 @section('title-block')Добавление продукта@endsection
 
-@section('content')
-
+@section('main')
+    <div class="col-6">
     <form method="post" action="{{route('admin-add-product-submit')}}" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
@@ -41,5 +41,5 @@
         </div>
 
     </form>
-
+    </div>
 @endsection

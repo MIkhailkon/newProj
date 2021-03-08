@@ -1,3 +1,12 @@
-.form-group:nth-child(6){
+.btn{
     margin-top: 10px;
 }
+
+$s: 60%;
+//.col{
+//    width: $s;
+//}
+.card-img-top{
+    height:$s;
+}
+

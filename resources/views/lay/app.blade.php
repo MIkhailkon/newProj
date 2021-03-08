@@ -13,12 +13,8 @@
 
     @include('inc.header')
     <div class="container">
-        <div class="col-6">
-            @yield('content')
-        </div>
+        @yield('main')
     </div>
-
-    @yield('main')
 
 
     @include('inc.footer')
